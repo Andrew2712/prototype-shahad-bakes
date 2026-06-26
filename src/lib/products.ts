@@ -78,4 +78,4 @@ export const products: Product[] = [
   { name: "Rain Forest Cake", category: "celebration-cakes" },
 ];
 
-export const WHATSAPP = "https://wa.me/919999999999?text=Hi%20Shahad%20Bakes%2C%20I%27d%20like%20to%20order";
+export const WHATSAPP = "https://wa.me/916363357287?text=Hi%20Shahad%20Bakes%2C%20I%27d%20like%20to%20order";
