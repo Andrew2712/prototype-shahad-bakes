@@ -5,6 +5,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
 import { signOut } from "@/lib/supabase/auth";
 import { toast } from "sonner";
+import { ShahadLogo } from "./ShahadLogo";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -34,13 +35,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-6 md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="h-9 w-9 rounded-full bg-secondary flex items-center justify-center">
-            <span className="font-display text-lg text-primary font-bold">S</span>
-          </div>
-          <span className="font-display text-xl tracking-tight text-secondary">
-            Shahad <span className="text-primary">Bakes</span>
-          </span>
+        <Link to="/" className="shrink-0">
+          <ShahadLogo variant="horizontal" size={38} />
         </Link>
 
         {/* Desktop Nav */}

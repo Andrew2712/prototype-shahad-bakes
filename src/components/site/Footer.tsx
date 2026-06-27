@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { ShahadLogo } from "./ShahadLogo";
 import { Instagram, Mail, MessageCircle, MapPin } from "lucide-react";
 import { WHATSAPP } from "@/lib/products";
 
@@ -7,7 +8,7 @@ export function Footer() {
     <footer className="mt-24 bg-secondary text-secondary-foreground">
       <div className="container-x py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-1">
-          <div className="font-display text-2xl">Shahad <span className="text-primary">Bakes</span></div>
+          <ShahadLogo variant="horizontal" size={36} />
           <p className="mt-3 text-sm text-secondary-foreground/75 leading-relaxed">
             Healthy sweetness without guilt. Freshly baked every day, with no sugar, no flour and no refined oil.
           </p>
